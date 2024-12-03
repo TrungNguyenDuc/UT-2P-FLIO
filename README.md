@@ -2,7 +2,7 @@
 
 ## Overview
 
-This software provides advanced tools for monitoring the visual cycle, analyzing fluorescence lifetime data, and unmixing fluorescence signals from retinal structures. It is designed to assist researchers in ophthalmology, retinal biology, and fluorescence lifetime imaging, offering powerful and efficient methods for studying the retina and its complex processes.
+This software provides advanced tools for monitoring the visual cycle, analyzing fluorescence lifetime data, and unmixing fluorescence signals from retinal structures. It is designed to assist researchers in ophthalmology, retinal biology, and fluorescence lifetime imaging, offering powerful and efficient methods for studying the retina and its complex processes. This software was used with our Two-photon fluorescence lifetime ophthalmoscopy (2P-FLIO) https://opg.optica.org/boe/fulltext.cfm?uri=boe-15-5-3094&id=549059.
 
 ## Key Features
 
