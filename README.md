@@ -2,7 +2,7 @@
 
 ## Overview
 
-This software provides advanced tools for monitoring the visual cycle, analyzing fluorescence lifetime data, and unmixing fluorescence signals from retinal structures. It is designed to assist researchers in ophthalmology, retinal biology, and fluorescence lifetime imaging, offering powerful and efficient methods for studying the retina and its complex processes. This software was used with our Two-photon fluorescence lifetime ophthalmoscopy (2P-FLIO) https://opg.optica.org/boe/fulltext.cfm?uri=boe-15-5-3094&id=549059.
+This software provides advanced tools for monitoring the visual cycle, analyzing fluorescence lifetime data, and unmixing fluorescence signals from retinal structures. It is designed to assist researchers in ophthalmology, retinal biology, and fluorescence lifetime imaging, offering powerful and efficient methods for studying the retina and its complex processes. This software was used with our Two-photon fluorescence lifetime ophthalmoscopy (2P-FLIO) [1] https://opg.optica.org/boe/fulltext.cfm?uri=boe-15-5-3094&id=549059.
 
 ![2P-FLIO-Fig  1](https://github.com/user-attachments/assets/e9cd17ed-0c06-47b8-9006-1d9356ba70dd)
 
@@ -18,7 +18,7 @@ This software focuses on the visual cycle, specifically the interaction between 
 - **Photoreceptor and RPE Functioning:** Evaluate how light exposure and dark recovery impact cellular activity and metabolism.
 
 ### 2. Rapid Analysis of Fluorescence Lifetime Data
-The software enables efficient analysis of multi-exponential fluorescence decay data using **Discrete Fourier Transform (DFT)** to generate phasor plots. Traditional fitting methods often require trial-and-error to estimate the parameters of complex exponential decays, which can be time-consuming and computationally intensive. This software overcomes these limitations by directly transforming decay curves into phasor plots without the need for fit-based approaches.
+The software enables efficient analysis of multi-exponential fluorescence decay data using **Discrete Fourier Transform (DFT)** to generate phasor plots [2]. Traditional fitting methods often require trial-and-error to estimate the parameters of complex exponential decays, which can be time-consuming and computationally intensive. This software overcomes these limitations by directly transforming decay curves into phasor plots without the need for fit-based approaches.
 
 - **Phasor Plot Generation:** The DFT method produces phasor plots that represent the decay of fluorescence lifetimes, offering a more intuitive and faster way to analyze data.
 - **Fit-Free Analysis:** By eliminating the need for parameter fitting, this method significantly speeds up the analysis of large datasets, particularly those with low photon counts.
@@ -72,6 +72,8 @@ This software is intended for researchers working in the following areas:
 
 Potential users include academic labs, vision research centers, and biomedical companies focused on retinal diagnostics and therapeutics.
 
-## Installation
+## References
+1. Trung Duc Nguyen, Yuan-I Chen, Anh-Thu Nguyen, Siem Yonas, Manasa P. Sripati, Yu-An Kuo, Soonwoo Hong, Mitchell Litvinov, Yujie He, Hsin-Chih Yeh, and H. Grady Rylander, "Two-photon autofluorescence lifetime assay of rabbit photoreceptors and retinal pigment epithelium during light-dark visual cycles in rabbit retina," Biomed. Opt. Express 15, 3094-3111 (2024). https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-3-3290&id=545659
+2. Trung Duc Nguyen, Yuan-I Chen, Anh-Thu Nguyen, Limin H. Chen, Siem Yonas, Mitchell Litvinov, Yujie He, Yu-An Kuo, Soonwoo Hong, H. Grady Rylander, and Hsin-Chih Yeh, "Multiplexed imaging in live cells using pulsed interleaved excitation spectral FLIM," Opt. Express 32, 3290-3307 (2024). https://opg.optica.org/oe/fulltext.cfm?uri=oe-32-3-3290&id=545659
 
 
