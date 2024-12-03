@@ -1,4 +1,4 @@
-d# Retinal Fluorescence Lifetime Imaging Software
+# Retinal Fluorescence Lifetime Imaging Software
 
 ## Overview
 
