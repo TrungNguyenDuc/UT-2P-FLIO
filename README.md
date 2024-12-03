@@ -4,6 +4,10 @@
 
 This software provides advanced tools for monitoring the visual cycle, analyzing fluorescence lifetime data, and unmixing fluorescence signals from retinal structures. It is designed to assist researchers in ophthalmology, retinal biology, and fluorescence lifetime imaging, offering powerful and efficient methods for studying the retina and its complex processes. This software was used with our Two-photon fluorescence lifetime ophthalmoscopy (2P-FLIO) https://opg.optica.org/boe/fulltext.cfm?uri=boe-15-5-3094&id=549059.
 
+![2P-FLIO-Fig  1](https://github.com/user-attachments/assets/e9cd17ed-0c06-47b8-9006-1d9356ba70dd)
+
+Fig. 1. (a) Schematic of 2P-FLIO system with raw data presentation, (b) Multiple retinal layers imaging and unmixing with endogenous fluorophores (c) Photoreceptor and retinal pigment epithelium lifetime images after unmixing. Abbreviations: PMT, photomultiplier tube; 1P, one-photon; 2P, two-photon; FLIO, fluorescence lifetime ophthalmoscopy; TCSPC, time-correlated single photon counting; SLO, scanning laser ophthalmoscopy; IP, image plane; P, pinhole; L, lens; PBS, polarizing beam splitter; EM, emission filter; M, mirror; DM, dichroic mirror; GM, galvo mirror; NZW, New Zealand White rabbit; DB, Dutch-Belted rabbit; GMM, Gaussian Mixture Models; PR, photoreceptor; RPE, retinal pigment epithelium. DM1 and DM2 were mounted on flip mounts (TRF90, Thorlabs) to select 2P-FLIO mode or 1P-FLIO mode. Scale bar is 50 µm.
+
 ## Key Features
 
 ### 1. Understanding the Visual Cycle
@@ -20,12 +24,20 @@ The software enables efficient analysis of multi-exponential fluorescence decay 
 - **Fit-Free Analysis:** By eliminating the need for parameter fitting, this method significantly speeds up the analysis of large datasets, particularly those with low photon counts.
 - **Efficient Data Processing:** The software is optimized for high-speed data processing, enabling real-time analysis of fluorescence lifetime images.
 
+![2P-FLIO-Fig  2](https://github.com/user-attachments/assets/8f0b0dd4-2821-45df-b40a-0864a61566fc)
+
+Fig. 2. (a) Lifetime phasors can be obtained from time-domain decay data, after conducting Fourier transform. For a single species, lifetime decreases clockwise along the universal semicircle. (b) Lifetime phasor calibration using fluorescein (4 ns, excited by 780 nm femtosecond laser) for 2P-FLIO. (c) τ phasor plot of a convallaria sample. (d) False-colored FLIM image of the convallaria. Scale bar is 5 µm.
+
 ### 3. Unmixing Fluorescence Signals
 One of the key challenges in fluorescence lifetime imaging is the separation of signals from multiple fluorophores, especially when they share overlapping emission spectra or when the signal-to-noise ratio is low. To address this, the software uses **Gaussian Mixture Models (GMM)** to unmix fluorescence signals from different retinal structures, such as photoreceptors and the RPE.
 
 - **Gaussian Mixture Models (GMM):** GMM is applied to decompose complex fluorescence lifetime data into distinct components corresponding to different structures in the retina.
 - **Signal Separation:** The software effectively isolates signals from multiple fluorophores by using lifetime characteristics to differentiate them.
 - **Overcoming Low Signal-to-Noise Ratios:** The GMM approach works effectively even with challenging data, including low signal-to-noise ratios, by modeling the fluorescence decay profiles of each fluorophore individually.
+  
+![2P-FLIO-Fig  3](https://github.com/user-attachments/assets/478e53a1-5edc-458c-95b6-69d8b2b4d5a0)
+
+Fig. 3. Data analysis procedure with Gaussian Mixture Models. (a) The 98 × 1 fluorescence decay curve I(t) at each pixel is separately transformed into τ phasors. (b) The 256 × 256 τ phasor sets (gτ, sτ) are used as inputs for the GMM, after GMM unmixing, the corresponding clusters for photoreceptor and RPE cells are selected. (c) Photoreceptors segmentation with the watershed algorithm and RPE segmentation with the k-nearest neighbors (KNN) algorithm. (d) Summary of lifetime changes during light-dark visual cycles. Abbreviations: KNN, k-nearest neighbors algorithm; PR, photoreceptor; RPE, retinal pigment epithelium; BG, background. Scale bars are 50 µm.
 
 ## How It Works
 
